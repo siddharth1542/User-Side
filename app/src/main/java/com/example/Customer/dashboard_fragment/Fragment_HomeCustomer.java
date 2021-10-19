@@ -23,7 +23,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -37,7 +36,6 @@ import com.example.Customer.responseModel.GetCategoryResponseModel;
 import com.example.Customer.responseModel.VendorDetailsResponse;
 import com.example.Customer.responseModel.VendorList;
 import com.example.Customer.viewModel.VenderViewModel;
-import com.google.android.material.tabs.TabLayout;
 import com.smarteist.autoimageslider.IndicatorView.animation.type.IndicatorAnimationType;
 import com.smarteist.autoimageslider.SliderAnimations;
 import com.smarteist.autoimageslider.SliderView;

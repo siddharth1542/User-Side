@@ -13,13 +13,10 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.example.Customer.R;
-import com.example.Customer.dashboard_fragment.Fragment_Product_Customer;
 import com.example.Customer.dashboard_fragment.Fragment_VendorOnCategory;
 import com.example.Customer.responseModel.AllCategoryDataList;
 
 import java.util.List;
-
-import de.hdodenhof.circleimageview.CircleImageView;
 
 public class Adapter_home extends RecyclerView.Adapter<Adapter_home.holder_home> {
 

@@ -1,8 +1,5 @@
 package com.example.Customer.dashboard_fragment;
 
-import static android.content.Context.MODE_PRIVATE;
-
-import android.content.SharedPreferences;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;

@@ -1,12 +1,10 @@
 package com.example.Customer;
 
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.location.Location;
 import android.location.LocationManager;
 import android.location.LocationRequest;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.MenuItem;
 
 import androidx.annotation.NonNull;
@@ -16,7 +14,6 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
 import com.example.Customer.dashboard_fragment.Fragment_Bank;
@@ -25,12 +22,8 @@ import com.example.Customer.dashboard_fragment.Fragment_Category_Customer;
 import com.example.Customer.dashboard_fragment.Fragment_Customer_Profile;
 import com.example.Customer.dashboard_fragment.Fragment_HomeCustomer;
 import com.example.Customer.dashboard_fragment.Fragment_KYC;
-import com.example.Customer.dashboard_fragment.Fragment_MyProduct;
-import com.example.Customer.dashboard_fragment.Fragment_ProductRequest;
-import com.example.Customer.dashboard_fragment.Fragment_Profile;
 import com.example.Customer.dashboard_fragment.Fragment_Search;
 import com.example.Customer.responseModel.AllCategoryDataList;
-import com.example.Customer.responseModel.GetVendorIDResponseModel;
 import com.example.Customer.viewModel.VenderViewModel;
 import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationCallback;
@@ -38,10 +31,6 @@ import com.google.android.gms.location.LocationResult;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationView;
 
-import java.net.Inet4Address;
-import java.net.InetAddress;
-import java.net.NetworkInterface;
-import java.util.Enumeration;
 import java.util.List;
 
 public class Dashboard extends AppCompatActivity
