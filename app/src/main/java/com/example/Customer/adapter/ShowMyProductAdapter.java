@@ -67,7 +67,7 @@ public class ShowMyProductAdapter extends RecyclerView.Adapter <ShowMyProductAda
 
             Glide.with(mContext)
                     .load(arr.get(position).getImagePath())
-                    .placeholder(R.drawable.loding)
+                    .placeholder(R.drawable.logo)
                     .into(holder.img);
 
         }

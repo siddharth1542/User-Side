@@ -48,7 +48,7 @@ public class Adapter_home extends RecyclerView.Adapter<Adapter_home.holder_home>
 
            Glide.with(mContext)
                     .load(arr.get(position).getImagePath())
-                    .placeholder(R.drawable.loding)
+                    .placeholder(R.drawable.logo)
                     .into(holder.imageView);
 
 

@@ -7,7 +7,6 @@ import android.location.LocationRequest;
 import android.os.Bundle;
 import android.view.MenuItem;
 
-import androidx.activity.OnBackPressedCallback;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
@@ -18,12 +17,12 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
 import com.example.Customer.dashboard_fragment.Fragment_Bank;
-import com.example.Customer.dashboard_fragment.Fragment_Blank;
+import com.example.Customer.dashboard_fragment.Fragment_Cart;
 import com.example.Customer.dashboard_fragment.Fragment_Category_Customer;
 import com.example.Customer.dashboard_fragment.Fragment_Customer_Profile;
 import com.example.Customer.dashboard_fragment.Fragment_HomeCustomer;
 import com.example.Customer.dashboard_fragment.Fragment_KYC;
-import com.example.Customer.dashboard_fragment.Fragment_Search;
+import com.example.Customer.dashboard_fragment.Fragment_Stores;
 import com.example.Customer.responseModel.AllCategoryDataList;
 import com.example.Customer.viewModel.VenderViewModel;
 import com.google.android.gms.location.FusedLocationProviderClient;
@@ -159,7 +158,7 @@ public class Dashboard extends AppCompatActivity
                             break;
 
                         case R.id.Store:
-                            selectedFragment = new Fragment_Search();
+                            selectedFragment = new Fragment_Stores();
                             break;
 
                         case R.id.Category:
@@ -167,7 +166,7 @@ public class Dashboard extends AppCompatActivity
                             break;
 
                         case R.id.Cart:
-                            selectedFragment = new Fragment_Blank();
+                            selectedFragment = new Fragment_Cart();
                             break;
 
                         case R.id.profile:

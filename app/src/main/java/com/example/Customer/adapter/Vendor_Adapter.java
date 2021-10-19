@@ -51,7 +51,7 @@ public class Vendor_Adapter extends RecyclerView.Adapter<Vendor_Adapter.holder>
 
             Glide.with(mContext)
                     .load(arr.get(position).getProfilePic())
-                    .placeholder(R.drawable.loding)
+                    .placeholder(R.drawable.logo)
                     .into(holder.imageView);
         }
 

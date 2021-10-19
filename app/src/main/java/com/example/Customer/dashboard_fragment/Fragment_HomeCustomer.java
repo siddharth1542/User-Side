@@ -54,12 +54,14 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 
 public class Fragment_HomeCustomer extends Fragment {
+
+
     private VenderViewModel venderViewModel;
     @BindView(R.id.vendor_Recycler)
     RecyclerView rcv_show;
 
-    @BindView(R.id.product_Recycler)
-    RecyclerView rcv_product;
+//    @BindView(R.id.product_Recycler)
+//    RecyclerView rcv_product;
 
     @BindView(R.id.category_Recycler)
     RecyclerView rcv_category;
@@ -85,9 +87,11 @@ public class Fragment_HomeCustomer extends Fragment {
 //    @BindView(R.id.all_vendors)
 //    LinearLayout all_vendors;
 
-    private static final int REQUEST_LOCATION = 1;
+
     Button btnGetLocation;
     TextView showLocation;
+
+    private static final int REQUEST_LOCATION = 1;
     LocationManager locationManager;
     double customer_latitude, customer_longitude;
 
@@ -112,7 +116,15 @@ public class Fragment_HomeCustomer extends Fragment {
         getCustomerLocation();
         getVendorlistNoPara();
         get_category();
-        get_product_List("9");
+
+
+
+
+
+     //   get_product_List("9");
+
+
+
 //        all_vendors.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View v)
@@ -163,9 +175,9 @@ public class Fragment_HomeCustomer extends Fragment {
         gridLayoutManager1.setOrientation(LinearLayoutManager.VERTICAL);
         rcv_category.setLayoutManager(gridLayoutManager1);
 
-        GridLayoutManager gridLayoutManager2 = new GridLayoutManager(getContext(), 1);
-        gridLayoutManager2.setOrientation(LinearLayoutManager.HORIZONTAL);
-        rcv_product.setLayoutManager(gridLayoutManager2);
+//        GridLayoutManager gridLayoutManager2 = new GridLayoutManager(getContext(), 1);
+//        gridLayoutManager2.setOrientation(LinearLayoutManager.HORIZONTAL);
+//        rcv_product.setLayoutManager(gridLayoutManager2);
 
 
 
@@ -196,33 +208,51 @@ public class Fragment_HomeCustomer extends Fragment {
     }
 
 
-    private void get_product_List(String sub_cat_id) {
+//    private void get_product_List(String sub_cat_id) {
+//
+//        String vendor_Id = "14";
+//
+//        venderViewModel.get_Product("14", sub_cat_id, "0").observe(getViewLifecycleOwner(), new Observer<GetProductResponse>() {
+//            @Override
+//            public void onChanged(GetProductResponse getProductResponse) {
+//                if (getProductResponse != null) {
+//                    if (rcv_product.getVisibility() == View.INVISIBLE) {
+//                        rcv_product.setVisibility(View.VISIBLE);
+//                        show_product_adapter = new ShowMyProductAdapter(getProductResponse.getData(), getContext(), venderViewModel, Integer.parseInt(vendor_Id));
+//                        show_product_adapter.notifyDataSetChanged();
+//                        rcv_product.setAdapter(show_product_adapter);
+//                    } else {
+//                        show_product_adapter = new ShowMyProductAdapter(getProductResponse.getData(), getContext(), venderViewModel, Integer.parseInt(vendor_Id));
+//                        show_product_adapter.notifyDataSetChanged();
+//                        rcv_product.setAdapter(show_product_adapter);
+//
+//                    }
+//                } else {
+//                    Toast.makeText(getActivity(), "List Empty!!", Toast.LENGTH_SHORT).show();
+//                    rcv_product.setVisibility(View.INVISIBLE);
+//                }
+//            }
+//        });
+//
+//    }
 
-        String vendor_Id = "14";
 
-        venderViewModel.get_Product("14", sub_cat_id, "0").observe(getViewLifecycleOwner(), new Observer<GetProductResponse>() {
-            @Override
-            public void onChanged(GetProductResponse getProductResponse) {
-                if (getProductResponse != null) {
-                    if (rcv_product.getVisibility() == View.INVISIBLE) {
-                        rcv_product.setVisibility(View.VISIBLE);
-                        show_product_adapter = new ShowMyProductAdapter(getProductResponse.getData(), getContext(), venderViewModel, Integer.parseInt(vendor_Id));
-                        show_product_adapter.notifyDataSetChanged();
-                        rcv_product.setAdapter(show_product_adapter);
-                    } else {
-                        show_product_adapter = new ShowMyProductAdapter(getProductResponse.getData(), getContext(), venderViewModel, Integer.parseInt(vendor_Id));
-                        show_product_adapter.notifyDataSetChanged();
-                        rcv_product.setAdapter(show_product_adapter);
 
-                    }
-                } else {
-                    Toast.makeText(getActivity(), "List Empty!!", Toast.LENGTH_SHORT).show();
-                    rcv_product.setVisibility(View.INVISIBLE);
-                }
-            }
-        });
 
-    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

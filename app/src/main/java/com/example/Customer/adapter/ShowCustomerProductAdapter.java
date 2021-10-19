@@ -61,7 +61,7 @@ public class ShowCustomerProductAdapter extends RecyclerView.Adapter <ShowCustom
 
             Glide.with(mContext)
                     .load(arr.get(position).getImagePath())
-                    .placeholder(R.drawable.loding)
+                    .placeholder(R.drawable.logo)
                     .into(holder.img);
 
         }

@@ -62,7 +62,7 @@ public class CategoryFirstSelectAdapter extends RecyclerView.Adapter<CategoryFir
 
             Glide.with(mcontext)
                     .load(arr.get(position).getImagePath())
-                    .placeholder(R.drawable.loding)
+                    .placeholder(R.drawable.logo)
                     .centerCrop()
                     .into(holder.img);
 

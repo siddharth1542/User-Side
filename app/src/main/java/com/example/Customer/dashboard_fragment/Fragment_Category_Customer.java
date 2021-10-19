@@ -4,6 +4,7 @@ import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
+import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -19,6 +20,7 @@ import com.example.Customer.responseModel.GetCategoryResponseModel;
 import com.example.Customer.viewModel.VenderViewModel;
 
 import butterknife.BindView;
+import butterknife.ButterKnife;
 
 
 public class Fragment_Category_Customer extends Fragment {
@@ -26,7 +28,7 @@ public class Fragment_Category_Customer extends Fragment {
     private VenderViewModel venderViewModel;
     Adapter_home adapter_home;
 
-    @BindView(R.id.category_Recycler)
+    @BindView(R.id.Cate_Recycler)
     RecyclerView rcv_category;
 
 
@@ -35,15 +37,19 @@ public class Fragment_Category_Customer extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment__category__customer, container, false);
+        ButterKnife.bind(this,view);
            ((Dashboard) getActivity()).getSupportActionBar().setTitle("Category");
 
-       get_category();
+
+
+        venderViewModel = new ViewModelProvider(this).get(VenderViewModel.class);
+
 
         GridLayoutManager gridLayoutManager1 = new GridLayoutManager(getContext(), 3);
         gridLayoutManager1.setOrientation(LinearLayoutManager.VERTICAL);
         rcv_category.setLayoutManager(gridLayoutManager1);
 
-
+        get_category();
 
         return view;
     }

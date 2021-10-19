@@ -49,7 +49,7 @@ public class CategoryGridViewMiniAdapter extends RecyclerView.Adapter<CategoryGr
 
             Glide.with(mcontext)
                     .load(arr.get(position).getImagePath())
-                    .placeholder(R.drawable.loding)
+                    .placeholder(R.drawable.logo)
                     .into(holder.img);
 
         }

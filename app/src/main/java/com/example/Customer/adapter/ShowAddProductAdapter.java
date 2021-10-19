@@ -79,7 +79,7 @@ public class ShowAddProductAdapter extends RecyclerView.Adapter <ShowAddProductA
 
             Glide.with(c)
                     .load(arr.get(position).getProductLogo())
-                    .placeholder(R.drawable.loding)
+                    .placeholder(R.drawable.logo)
 //                    .circleCrop()
 //                    .apply(new RequestOptions().override(50,50))
                     .centerCrop()

@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".dashboard_fragment.Fragment_VendorOnCategory">
+    tools:context=".dashboard_fragment.Fragment_Stores">
 
     <androidx.cardview.widget.CardView
         app:cardCornerRadius="6dp"
@@ -13,25 +13,35 @@
         android:layout_marginTop="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        app:cardMaxElevation="10dp"
         >
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
             >
-<!--            <TextView-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_marginTop="10dp"-->
-<!--                android:text="Store"-->
-<!--                android:textStyle="bold"-->
-<!--                android:layout_marginStart="15dp"-->
-<!--                android:textColor="@color/black"-->
-<!--                android:layout_marginBottom="10dp"-->
-<!--                >-->
-<!--            </TextView>-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@color/heading_background"
+                >
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    android:text="Store"-->
+<!--                    android:layout_marginStart="15dp"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:layout_marginBottom="10dp"-->
+
+<!--                    >-->
+
+<!--                </TextView>-->
+            </LinearLayout>
+
             <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/vendor_Cat_Recycler"
+                android:id="@+id/vendor_Recycler"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:cardCornerRadius="10dp"
