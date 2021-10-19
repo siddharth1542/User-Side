@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/app_background"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:context=".OTP_Verify">
+
+    <!--    ===========================Tile Section======================-->
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="60dp"-->
+<!--        android:background="@color/main_app_color"-->
+<!--        >-->
+<!--        <ImageView-->
+<!--            android:id="@+id/img_back"-->
+<!--            android:layout_width="25dp"-->
+<!--            android:layout_height="25dp"-->
+<!--            android:src="@drawable/back"-->
+<!--            android:layout_marginStart="10dp"-->
+<!--            android:layout_gravity="center_vertical"-->
+<!--            app:tint="@color/white">-->
+
+<!--        </ImageView>-->
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Login"-->
+<!--            android:layout_marginStart="10dp"-->
+<!--            android:layout_gravity="center_vertical"-->
+<!--            android:textSize="22sp"-->
+<!--            android:textColor="@color/white"-->
+<!--            >-->
+
+<!--        </TextView>-->
+<!--    </LinearLayout>-->
+
+
+
+    <!--    ==========================Main Section======================-->
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginBottom="30dp"
+
+                 android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/heading_logo"
+                                android:layout_marginStart="100dp"
+                                android:layout_marginEnd="100dp"
+                                >
+
+                            </ImageView>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Verify Your OTP"
+                                android:textSize="@dimen/black_heading_size"
+                                android:gravity="center_horizontal"
+                                android:textColor="@color/black_heading"
+                                android:layout_marginTop="30dp"
+                                >
+                            </TextView>
+
+
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                android:background="@drawable/custom_layout"
+                                app:cardCornerRadius="20dp"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginEnd="10dp"
+                                >
+                                <EditText
+                                    android:id="@+id/edt_otp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:background="@drawable/custom_layout"
+                                    android:layout_weight="7"
+                                    android:textSize="18sp"
+                                    android:lines="1"
+                                    android:textAlignment="center"
+                                    android:maxLines="1"
+                                    android:maxLength="6"
+                                    android:inputType="number"
+                                    android:textColor="@color/black_heading"
+                                    android:hint="Enter OTP"
+                                    android:paddingStart="10dp"
+                                    >
+                                </EditText>
+                            </androidx.cardview.widget.CardView>
+
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:gravity="end"
+                     android:orientation="horizontal">
+
+                     <TextView
+                         android:id="@+id/resend_visible"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                         android:layout_marginRight="10dp"
+                         android:text="Resend OTP :"
+                         android:textColor="@color/black"/>
+
+                            <TextView
+                                android:id="@+id/resend_otp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:layout_marginRight="15dp"
+                                android:layout_marginTop="20dp"
+                                android:text="Resend OTP"
+                                android:textColor="@color/black"/>
+
+                 </LinearLayout>
+
+                            <Button
+                                android:id="@+id/btn_verify22"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/custom_button"
+                                android:text="      confirm otp"
+                                android:layout_gravity="bottom"
+                                android:layout_marginTop="30dp"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginEnd="20dp"
+                                android:textSize="18sp"
+                                android:textColor="@color/app_white"
+                                android:drawableRight="@drawable/forward"
+                                android:drawableTint="@color/app_white"
+                                >
+                            </Button>
+             </LinearLayout>
+</ScrollView>
+
+
+
+
+</LinearLayout>

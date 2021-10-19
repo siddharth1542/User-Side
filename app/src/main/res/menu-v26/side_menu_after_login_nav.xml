@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+
+        <item android:id="@+id/ProductRequest"
+            android:icon="@drawable/ic_add_product"
+            android:iconTint="@color/main_app_color"
+            android:title="Product Request"/>
+
+
+        <item android:id="@+id/Refer"
+            android:icon="@drawable/reffer_earn"
+            android:iconTint="@color/main_app_color"
+            android:title="Refer &amp; Earn"/>
+
+
+        <item
+            android:id="@+id/BankDetails"
+            android:icon="@drawable/ic_bank"
+            android:iconTint="@color/main_app_color"
+            android:title="Bank Details"/>
+
+        <item
+            android:id="@+id/KYCDetails"
+            android:icon="@drawable/ic_kyc__2_"
+            android:iconTint="@color/main_app_color"
+            android:title="KYC Details"/>
+
+
+        <item android:id="@+id/logout"
+            android:icon="@drawable/ic_logout"
+            android:iconTint="@color/main_app_color"
+            android:title="Logout"/>
+
+
+<!--        <item android:id="@+id/Logout"-->
+<!--            android:icon="@drawable/ic_logout"-->
+<!--            android:title="Logout"/>-->
+
+
+
+
+</menu>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="-20dp"
+    android:layout_height="180dp"
+    android:padding="20dp"
+    app:cardCornerRadius="20dp"
+    app:cardBackgroundColor="@color/main_app_color">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/ic_login"
+            android:layout_gravity="center|bottom"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign in"
+            android:textColor="@color/app_white"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="@dimen/black_heading_size"/>
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

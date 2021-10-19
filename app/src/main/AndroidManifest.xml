@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.Customer">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyProject23Sep"
+        android:usesCleartextTraffic="true">
+
+        <service
+            android:name="com.example.Customer.MyService"
+            android:enabled="true"
+            android:exported="true"></service>
+
+        <activity
+            android:name="com.example.Customer.Logout"
+            android:exported="true" />
+        <activity
+            android:name="com.example.Customer.CategoryFirstSelection"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.Customer.VendorSingUp"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.Customer.Timepick"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.Customer.Add_product"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.Customer.Dashboard"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.Customer.OTP_Verify"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.Customer.LoginAndRegistration"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.Customer.Welcome"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.Customer.SubCategory_Tab"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.Customer.SplashScreen"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

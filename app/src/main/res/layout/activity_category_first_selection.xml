@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_above="@id/Register"
+    android:layout_below="@id/title_section1"
+    android:layout_margin="10dp"
+    android:background="@drawable/custom_lightborder_layout"
+    android:orientation="vertical"
+    android:padding="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/heading_logo"
+                android:layout_marginTop="50dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="50dp"
+                >
+
+            </ImageView>
+
+
+            <TextView
+                android:id="@+id/txt"
+                android:layout_below="@id/enterShopName"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select Category*"
+                android:textColor="@color/main_app_color"
+                >
+            </TextView>
+
+            <LinearLayout
+                android:layout_below="@id/txt"
+                android:id="@+id/recycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <!--        <androidx.recyclerview.widget.RecyclerView-->
+                <!--            android:id="@+id/category_select"-->
+                <!--            android:layout_width="wrap_content"-->
+                <!--            android:layout_height="match_parent"-->
+                <!--            android:layout_gravity="center"-->
+                <!--            android:foregroundGravity="center" />-->
+
+
+                <Spinner
+                    android:id="@+id/spiner_cat"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    >
+
+                </Spinner>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/enterShopName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/custom_lightborder_layout"
+                android:padding="5dp"
+                >
+
+                <EditText
+                    android:id="@+id/edt_shopName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Your Shop Name"
+                    android:background="@drawable/custom_edittext_nocurve"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_horizontal"
+                    android:textSize="18sp"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:padding="10dp"
+                    >
+                </EditText>
+
+
+            </LinearLayout>
+
+
+
+            <Button
+                android:id="@+id/btn_submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/recycler"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/custom_layout_appcolor"
+                android:text="Submit"
+                android:textColor="@color/app_white"
+                android:textSize="18sp">
+
+            </Button>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+
+
+
+</LinearLayout>

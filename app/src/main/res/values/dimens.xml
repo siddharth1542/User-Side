@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="black_heading_size">25sp</dimen>
+    <dimen name="action_bar_height">60dp</dimen>
+    <dimen name="actionbar_title">22sp</dimen>
+    <dimen name="single_item_text">15sp</dimen>
+    <dimen name="profile_text_heading">12dp</dimen>
+    <dimen name="each_productName">18sp</dimen>
+</resources>

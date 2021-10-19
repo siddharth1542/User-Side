@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/main_app_color"
+    tools:context=".SplashScreen"
+    android:gravity="center"
+    style="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@+id/splash_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo_150"
+        >
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/splash_sub_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        android:src="@drawable/ic_flippy_icon">
+
+    </ImageView>
+
+
+</LinearLayout>

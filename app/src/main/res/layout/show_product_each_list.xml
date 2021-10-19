@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_width="match_parent">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <ImageView
+            android:id="@+id/productLogo_img"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@drawable/logo"
+            android:padding="10dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="5dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:id="@+id/eachProductName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Product Name"
+                android:textSize="@dimen/single_item_text"
+                android:textColor="@color/main_app_color"
+                tools:ignore="SpUsage">
+            </TextView>
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="3"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        android:id="@+id/eachUnitValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Unit Value"
+                        android:textSize="12sp"
+                        >
+                    </TextView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="/"
+                        android:textSize="12sp"
+                        >
+                    </TextView>
+                    <TextView
+                        android:id="@+id/eachUnit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Unit"
+                        android:textSize="12sp"
+                        >
+                    </TextView>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="MRP: "
+                        android:textStyle="bold"
+                        android:textSize="12sp"
+                        >
+                    </TextView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" ₹ "
+                        android:textStyle="bold"
+                        android:textSize="12sp"
+                        >
+                    </TextView>
+                    <TextView
+                        android:id="@+id/eachPrice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Unit"
+                        android:textStyle="bold"
+                        android:textSize="12sp"
+                        >
+                    </TextView>
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="2"
+                >
+
+                <Button
+                    android:id="@+id/btn_add"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Add"
+                    android:textColor ="@color/app_white"
+                    android:layout_marginEnd="3dp"
+                    android:layout_gravity="center_horizontal"
+                    >
+
+                </Button>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+
+            android:background="@color/main_app_color"
+            >
+
+        </View>
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>
+
+
+
+<!--</androidx.cardview.widget.CardView>-->
+</LinearLayout>
+
+
+
+<!--<LinearLayout-->
+<!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--xmlns:tools="http://schemas.android.com/tools"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:orientation="vertical"-->
+<!--android:layout_width="match_parent">-->
+
+<!--<androidx.cardview.widget.CardView-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    app:cardCornerRadius="8dp"-->
+<!--    app:cardElevation="10dp"-->
+<!--    app:cardPreventCornerOverlap="true"-->
+<!--    android:layout_gravity="center"-->
+<!--    android:layout_marginEnd="10dp"-->
+<!--    android:layout_marginStart="10dp"-->
+<!--    android:layout_marginTop="3dp"-->
+<!--    android:outlineSpotShadowColor="@color/main_app_color"-->
+<!--    android:outlineAmbientShadowColor="@color/main_app_color"-->
+<!--    >-->
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal"-->
+<!--        >-->
+<!--        <LinearLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="vertical"-->
+<!--            android:background="@drawable/custom_layout_appcolor"-->
+<!--            >-->
+<!--            <ImageView-->
+<!--                android:layout_width="75dp"-->
+<!--                android:layout_height="75dp"-->
+<!--                android:src="@drawable/logo"-->
+<!--                android:padding="10dp"/>-->
+<!--        </LinearLayout>-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:orientation="vertical"-->
+<!--            android:padding="5dp"-->
+<!--            >-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="horizontal"-->
+<!--                >-->
+<!--                <TextView-->
+<!--                    android:id="@+id/eachProductName"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Product Name"-->
+<!--                    android:textSize="@dimen/single_item_text"-->
+<!--                    android:textColor="@color/main_app_color"-->
+<!--                    tools:ignore="SpUsage">-->
+<!--                </TextView>-->
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="("-->
+<!--                    android:textSize="@dimen/single_item_text"-->
+<!--                    >-->
+<!--                </TextView>-->
+<!--                <TextView-->
+<!--                    android:id="@+id/eachUnitValue"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Unit Value"-->
+<!--                    android:textSize="@dimen/single_item_text"-->
+<!--                    >-->
+<!--                </TextView>-->
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text=")"-->
+<!--                    android:textSize="@dimen/single_item_text"-->
+<!--                    >-->
+<!--                </TextView>-->
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="/"-->
+<!--                    android:textSize="@dimen/single_item_text"-->
+<!--                    >-->
+<!--                </TextView>-->
+<!--                <TextView-->
+<!--                    android:id="@+id/eachUnit"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Unit"-->
+<!--                    android:textSize="@dimen/single_item_text"-->
+<!--                    >-->
+<!--                </TextView>-->
+
+<!--            </LinearLayout>-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="horizontal"-->
+<!--                android:layout_weight="3"-->
+<!--                >-->
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="horizontal"-->
+<!--                    android:layout_weight="1"-->
+<!--                    >-->
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Price: "-->
+<!--                        android:textSize="@dimen/single_item_text"-->
+<!--                        >-->
+<!--                    </TextView>-->
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="₹"-->
+<!--                        android:textSize="@dimen/single_item_text"-->
+<!--                        >-->
+<!--                    </TextView>-->
+<!--                    <TextView-->
+<!--                        android:id="@+id/eachPrice"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Unit"-->
+<!--                        android:textSize="@dimen/single_item_text"-->
+<!--                        >-->
+<!--                    </TextView>-->
+<!--                </LinearLayout>-->
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:layout_weight="2"-->
+<!--                    >-->
+
+<!--                    <Button-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Add"-->
+<!--                        android:layout_marginEnd="3dp"-->
+<!--                        android:layout_gravity="center_horizontal"-->
+<!--                        >-->
+
+<!--                    </Button>-->
+<!--                </LinearLayout>-->
+<!--            </LinearLayout>-->
+
+
+<!--        </LinearLayout>-->
+
+
+
+
+
+
+
+
+
+
+
+
+<!--    </LinearLayout>-->
+
+
+
+<!--</androidx.cardview.widget.CardView>-->
+<!--</LinearLayout>-->
