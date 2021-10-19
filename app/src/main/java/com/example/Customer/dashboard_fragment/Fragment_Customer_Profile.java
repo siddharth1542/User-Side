@@ -24,17 +24,6 @@ public class Fragment_Customer_Profile extends Fragment {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
         ((Dashboard) getActivity()).getSupportActionBar().setTitle("Profile");
         return view;
     }
