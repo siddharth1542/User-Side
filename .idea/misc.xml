@@ -3,7 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/UserSideGrocery/app/src/main/res/layout/activity_category_first_selection.xml" value="0.12817028985507245" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/UserSideGrocery/app/src/main/res/layout/activity_main.xml" value="0.12771739130434784" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/UserSideGrocery/app/src/main/res/layout/fragment__home_customer.xml" value="0.12817028985507245" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/UserSideGrocery/app/src/main/res/layout/show_catagory_each_list.xml" value="0.12817028985507245" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/UserSideGrocery/app/src/main/res/layout/show_catagory_firsteach_list.xml" value="0.12817028985507245" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/UserSideGrocery/app/src/main/res/layout/show_customer_product_each_list.xml" value="0.12817028985507245" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/UserSideGrocery/app/src/main/res/layout/show_each_list_home.xml" value="0.12817028985507245" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/UserSideGrocery/app/src/main/res/layout/slide_item_view_pager.xml" value="0.2443820224719101" />
       </map>
     </option>
   </component>

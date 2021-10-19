@@ -125,15 +125,24 @@
                 </TextView>
             </LinearLayout>
 
-                <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/product_Recycler"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    app:cardCornerRadius="10dp"
-                    android:background="@color/app_white"
-                    >
 
-                </androidx.recyclerview.widget.RecyclerView>
+                <androidx.viewpager2.widget.ViewPager2
+                    android:id="@+id/viewPager0"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingStart="80dp"
+                    android:paddingEnd="80dp"/>
+
+
+<!--                <androidx.recyclerview.widget.RecyclerView-->
+<!--                    android:id="@+id/product_Recycler"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    app:cardCornerRadius="10dp"-->
+<!--                    android:background="@color/app_white"-->
+<!--                    >-->
+
+<!--                </androidx.recyclerview.widget.RecyclerView>-->
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>

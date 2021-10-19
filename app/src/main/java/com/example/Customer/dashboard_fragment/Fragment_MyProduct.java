@@ -83,25 +83,25 @@ public class Fragment_MyProduct extends Fragment {
 
        swipeRefreshLayout = view.findViewById(R.id.refreshLayout);
 
-        swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener()
-        {
-            @Override
-            public void onRefresh()
-            {
-                Fragment_MyProduct fragment_home= new Fragment_MyProduct();
-                FragmentManager fragmentManager = getFragmentManager();
-                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                fragmentTransaction.replace(R.id.fragment_container, fragment_home);
-                fragmentTransaction.commit();
-
-                new Handler().postDelayed(new Runnable() {
-                    @Override
-                    public void run() {
-                        swipeRefreshLayout.setRefreshing(false);
-                    }
-                }, 1000);
-            }
-        });
+//        swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener()
+//        {
+//            @Override
+//            public void onRefresh()
+//            {
+//                Fragment_MyProduct fragment_home= new Fragment_MyProduct();
+//                FragmentManager fragmentManager = getFragmentManager();
+//                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+//                fragmentTransaction.replace(R.id.fragment_container, fragment_home);
+//                fragmentTransaction.commit();
+//
+//                new Handler().postDelayed(new Runnable() {
+//                    @Override
+//                    public void run() {
+//                        swipeRefreshLayout.setRefreshing(false);
+//                    }
+//                }, 1000);
+//            }
+//        });
 
 
 
